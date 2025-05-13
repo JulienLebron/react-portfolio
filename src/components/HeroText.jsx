@@ -45,7 +45,7 @@ const HeroText = () => {
           >
             <FlipWords
               words={words}
-              className="font-black text-white text-8xl"
+              className="font-black text-sky-300 text-8xl"
             />
           </Motion.div>
           <Motion.p
@@ -88,7 +88,7 @@ const HeroText = () => {
           >
             <FlipWords
               words={words}
-              className="font-bold text-white text-5xl"
+              className="font-bold text-sky-300 text-5xl"
             />
           </Motion.div>
           <Motion.p
