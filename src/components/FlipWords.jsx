@@ -45,7 +45,7 @@ export function FlipWords({
       layoutId={`words-here-${id}`}
       animate={{ width }}
       transition={{ duration: animationDuration / 2000 }}
-      className={twMerge("z-10 relative inline-block text-left ", className)}
+      className={twMerge("z-10 relative inline-block", className)}
       key={words[currentWordIndex]}
     >
       <Motion.div
