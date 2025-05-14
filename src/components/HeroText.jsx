@@ -15,7 +15,7 @@ const HeroText = () => {
     },
   };
   return (
-    <div className="z-10 mt-20 text-left md:mt-40 md:text-left rounded-3xl bg-clip-text">
+    <div className="z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
       {/* Desktop View */}
       <div className="flex-col hidden md:flex c-space">
         <Motion.h1
@@ -29,7 +29,7 @@ const HeroText = () => {
         </Motion.h1>
         <div className="flex flex-col items-start">
           <Motion.p
-            className="text-4xl font-medium text-neutral-300"
+            className="text-4xl font-medium text-neutral-400"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -45,11 +45,11 @@ const HeroText = () => {
           >
             <FlipWords
               words={words}
-              className="font-black text-sky-300 text-8xl"
+              className="font-black text-white text-8xl"
             />
           </Motion.div>
           <Motion.p
-            className="text-4xl font-medium text-neutral-300"
+            className="text-4xl font-medium text-neutral-400"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -72,13 +72,13 @@ const HeroText = () => {
         </Motion.p>
         <div>
           <Motion.p
-            className="text-3xl font-black text-neutral-300"
+            className="text-3xl font-black text-neutral-400"
             variants={variants}
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            A Developer Dedicated to Crafting
+            Building
           </Motion.p>
           <Motion.div
             variants={variants}
@@ -88,11 +88,11 @@ const HeroText = () => {
           >
             <FlipWords
               words={words}
-              className="font-bold text-sky-300 text-5xl"
+              className="font-bold text-white text-5xl"
             />
           </Motion.div>
           <Motion.p
-            className="text-3xl font-black text-neutral-300"
+            className="text-3xl font-black text-neutral-400"
             variants={variants}
             initial="hidden"
             animate="visible"
