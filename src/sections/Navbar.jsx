@@ -5,7 +5,7 @@ function Navigation() {
   return (
     <ul className="nav-ul">
       <li className="nav-li">
-        <a className="nav-link" href="#home">
+        <a className="nav-link" href="/">
           Home
         </a>
       </li>
@@ -35,9 +35,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a
             href="/"
-            className="text-xl font-bold transition-colors text-white"
+            className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
           >
-            Julien<span className="text-sky-300">.</span>jsx
+            Julien.jsx
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}
