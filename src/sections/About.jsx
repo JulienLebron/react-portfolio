@@ -18,8 +18,8 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I'm Julien Lebron</p>
             <p className="subtext">
-              Over the last 4 years, I developed my frontend and backend dev
-              skills to deliver dynamic and software web applications.
+              Over the last 4 years, I have developed my frontend and backend
+              development skills to deliver dynamic and robust web applications.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -60,17 +60,17 @@ const About = () => {
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/csharp-pink.png"
+              image="assets/logos/javascript.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/dotnet-pink.png"
+              image="assets/logos/react.svg"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/blazor-pink.png"
+              image="assets/logos/vitejs.svg"
               containerRef={grid2Container}
             />
           </div>
@@ -85,7 +85,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              I'm based in Mars, and open to remote work worldwide
+              Based in Mars, I'm open to remote opportunities worldwide.
             </p>
             {/* <figure className="absolute left-[40%] top-[0%]">
               <Globe lowPerformanceMode={true} />
@@ -97,7 +97,7 @@ const About = () => {
         <div className="grid-special-color grid-4">
           <div className="flex flex-col items-center justify-center gap-4 size-full">
             <p className="text-center headtext">
-              Do you want to start a project together?
+              Ready to start a project together? Let’s build something great!
             </p>
             <CopyEmailButton />
           </div>
@@ -107,8 +107,9 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Teck Stack</p>
             <p className="subtext">
-              I specialize in a variety of languages, frameworks, and tools that
-              allow me to build robust and scalable applications
+              My expertise spans multiple languages, frameworks, and development
+              tools, allowing me to create scalable and high-performance
+              applications.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
