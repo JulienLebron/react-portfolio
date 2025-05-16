@@ -10,7 +10,7 @@ export const myProjects = [
     ],
     href: "https://play.google.com/store/apps/details?id=com.reactnativefirebase.gpmappspecific&pcampaignid=web_share",
     logo: "",
-    image: "/assets/projects/budly-app.png",
+    image: "/assets/projects/budly-app.webp",
     tags: [
       {
         id: 1,
@@ -44,7 +44,7 @@ export const myProjects = [
     ],
     href: "https://www.mybudly.com/en",
     logo: "",
-    image: "/assets/projects/mybudly-web.png",
+    image: "/assets/projects/budly-web.webp",
     tags: [
       {
         id: 1,
@@ -69,7 +69,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/pokedex.png",
+    image: "/assets/projects/pokedex.webp",
     tags: [
       {
         id: 1,
@@ -99,7 +99,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/movie-app.png",
+    image: "/assets/projects/movie-app.webp",
     tags: [
       {
         id: 1,
@@ -132,7 +132,7 @@ export const myProjects = [
     ],
     href: "https://www.mygynecocare.be/",
     logo: "",
-    image: "/assets/projects/mygynecocare.png",
+    image: "/assets/projects/mygynecocare.webp",
     tags: [
       {
         id: 1,

@@ -29,7 +29,7 @@ const HeroText = () => {
         </Motion.h1>
         <div className="flex flex-col items-start">
           <Motion.p
-            className="text-4xl font-medium text-neutral-400"
+            className="text-4xl font-medium text-neutral-300"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -49,7 +49,7 @@ const HeroText = () => {
             />
           </Motion.div>
           <Motion.p
-            className="text-4xl font-medium text-neutral-400"
+            className="text-4xl font-medium text-neutral-300"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -72,7 +72,7 @@ const HeroText = () => {
         </Motion.p>
         <div>
           <Motion.p
-            className="text-3xl font-black text-neutral-400"
+            className="text-3xl font-black text-neutral-300"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -92,7 +92,7 @@ const HeroText = () => {
             />
           </Motion.div>
           <Motion.p
-            className="text-3xl font-black text-neutral-400"
+            className="text-3xl font-black text-neutral-300"
             variants={variants}
             initial="hidden"
             animate="visible"
