@@ -9,6 +9,7 @@ const Project = ({
   image,
   tags,
   setPreview,
+  isMobile,
 }) => {
   const [isHidden, setIsHidden] = useState(false);
   return (
@@ -26,6 +27,7 @@ const Project = ({
             ))}
           </div>
         </div>
+        {isMobile && <img src={image} />}
         <button
           onClick={() => setIsHidden(true)}
           className="flex items-center gap-1 cursor-pointer hover-animation"
