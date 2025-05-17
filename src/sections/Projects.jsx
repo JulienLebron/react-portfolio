@@ -11,6 +11,7 @@ const Projects = () => {
 
   const [preview, setPreview] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
+  const [isDetailsOpen, setIsDetailsOpen] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -43,10 +44,11 @@ const Projects = () => {
           {...project}
           setPreview={setPreview}
           isMobile={isMobile}
+          onDetailsToggle={setIsDetailsOpen}
         />
       ))}
 
-      {!isMobile && preview && (
+      {!isMobile && preview && !isDetailsOpen && (
         <Motion.img
           className="fixed top-0 left-0 z-50 object-contain h-60 rounded-lg shadow-lg pointer-events-none"
           src={preview}

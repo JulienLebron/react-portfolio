@@ -1,26 +1,27 @@
 import React, { useState } from "react";
 import { motion as Motion } from "motion/react";
 
-function Navigation() {
+function Navigation({ setIsOpen }) {
+  const handleClick = () => setIsOpen && setIsOpen(false);
   return (
     <ul className="nav-ul">
       <li className="nav-li">
-        <a className="nav-link" href="#home">
+        <a className="nav-link" href="#home" onClick={handleClick}>
           Home
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#about">
+        <a className="nav-link" href="#about" onClick={handleClick}>
           About
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#projects">
+        <a className="nav-link" href="#projects" onClick={handleClick}>
           Projects
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#contact">
+        <a className="nav-link" href="#contact" onClick={handleClick}>
           Contact
         </a>
       </li>
@@ -63,7 +64,7 @@ const Navbar = () => {
           transition={{ duration: 1 }}
         >
           <nav className="pb-5">
-            <Navigation />
+            <Navigation setIsOpen={setIsOpen} />
           </nav>
         </Motion.div>
       )}
