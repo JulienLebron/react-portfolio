@@ -85,7 +85,7 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              Based in Mars, I'm open to remote opportunities worldwide.
+              Based in Spain, I'm open to remote opportunities worldwide.
             </p>
             {/* <figure className="absolute left-[40%] top-[0%]">
               <Globe lowPerformanceMode={true} />

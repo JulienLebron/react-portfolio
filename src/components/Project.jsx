@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ProjectDetails from "./ProjectDetails";
 
 const Project = ({
@@ -10,24 +10,34 @@ const Project = ({
   tags,
   setPreview,
   isMobile,
+  onDetailsToggle,
 }) => {
   const [isHidden, setIsHidden] = useState(false);
+  useEffect(() => {
+    onDetailsToggle(isHidden);
+  }, [isHidden, onDetailsToggle]);
   return (
     <>
       <div
-        className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
+        className="flex-wrap items-center justify-between py-10 sm:flex"
         onMouseEnter={() => setPreview(image)}
         onMouseLeave={() => setPreview(null)}
       >
-        <div>
+        <div className="mb-0">
           <p className="text-2xl">{title}</p>
-          <div className="flex gap-5 mt-2 text-sky-300">
+          <div className="flex gap-2 mt-2 text-sky-300">
             {tags.map((tag) => (
-              <span key={tag.id}>{tag.name}</span>
+              // <span key={tag.id}>{tag.name}</span>
+              <img
+                key={tag.id}
+                src={tag.path}
+                alt={tag.name}
+                className="rounded-lg size-10 hover-animation"
+              />
             ))}
           </div>
         </div>
-        {isMobile && <img src={image} />}
+        {isMobile && <img className="my-5 rounded-2xl" src={image} />}
         <button
           onClick={() => setIsHidden(true)}
           className="flex items-center gap-1 cursor-pointer hover-animation"

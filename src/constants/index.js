@@ -120,7 +120,7 @@ export const myProjects = [
   },
   {
     id: 5,
-    title: "My Gyneco Care",
+    title: "My Gyneco Care Web",
     description:
       "A secure appointment booking and patient management application for a gynecology practice.",
     subDescription: [
