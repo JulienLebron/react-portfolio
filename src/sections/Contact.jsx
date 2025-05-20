@@ -67,7 +67,7 @@ const Contact = () => {
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
-            "Whether you want to build a new website, enhance your current
+            Whether you want to build a new website, enhance your current
             platform, or bring a unique project to life, I'm here to help.
           </p>
         </div>

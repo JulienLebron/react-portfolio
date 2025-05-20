@@ -1,26 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Project from "../components/Project";
 import { myProjects } from "../constants";
 import { motion as Motion, useMotionValue, useSpring } from "motion/react";
+import useIsMobile from "../hooks/useIsMobile";
 
 const Projects = () => {
+  const isMobile = useIsMobile();
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const springX = useSpring(x, { damping: 10, stiffness: 50 });
   const springY = useSpring(y, { damping: 10, stiffness: 50 });
 
   const [preview, setPreview] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
   const [isDetailsOpen, setIsDetailsOpen] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
 
   const handleMouseMove = (e) => {
     if (!isMobile) {
